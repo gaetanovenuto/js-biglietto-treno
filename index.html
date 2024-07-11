@@ -66,19 +66,19 @@
                                 <div class="row justify-content-between">
                                     <div class="mb-3 w-50">
                                         <label for="KmInput" class="form-label py-2">Quanti km vuoi percorrere?</label>
-                                        <input type="number" class="form-control" id="KmInput" placeholder="Inserisci il numero di km che vuoi percorrere">
+                                        <input type="number" class="form-control" id="KmInput" placeholder="Inserisci il numero di km che vuoi percorrere" required>
                                     </div>
                                     <div class="mb-3 w-50">
                                         <label for="AgeInput" class="form-label py-2">Qual è la tua data di nascita?</label>
-                                        <input type="date" class="form-control" id="AgeInput">
+                                        <input type="date" class="form-control" id="AgeInput" required>
                                     </div>                                    
                                 </div>
                                 <div class="row justify-content-center">                   
-                                    <button type="button" class="col-auto btn btn-danger text-white px-4" id="KmFinalPrice" onclick="">Calcola</button>
+                                    <button type="button" class="col-auto btn btn-danger text-white px-4" id="KmFinalPrice" onclick="calculate()">Calcola</button>
                                 </div>
                             </form>
                             <div class="text-center py-3 fw-bold text-dark">
-                                Il costo del tuo biglietto è di € 
+                                Il costo del biglietto è di € 
                                 <span id="final-price"></span>
                             </div>                         
                         </div>
