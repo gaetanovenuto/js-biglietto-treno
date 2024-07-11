@@ -24,6 +24,8 @@ function calculate() {
     const UserAge = CurrentYear - UserYear;
     console.log("L'età dell'utente è di:", UserAge, "anni.");
 
+    let FinalPrice = 0;
+
     if (UserAge < 18) {
         let FinalPrice = (KmFinalPrice - (KmFinalPrice * 0.2));
         console.log("Il prezzo del biglietto scontato sarà di: €" ,FinalPrice);
