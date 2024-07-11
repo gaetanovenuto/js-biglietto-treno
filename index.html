@@ -23,24 +23,81 @@
 
         <!-- header -->
         <header>
-                HEADER
+                <div class="container">
+                    <div class="row justify-content-between p-3">
+                        <div class="col-2">
+                            <img src="img/logo-trenitalia.svg" alt="Trenitalia" id="logo">
+                        </div>
+                        <div class="col-4">
+                            <div class="row h-100 align-items-center">
+                                <div class="col-3">
+                                    <a href="#" class="link-dark text-decoration-none">Chi siamo</a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="link-dark text-decoration-none">Frecce</a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="link-dark text-decoration-none">Servizi</a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="#" class="text-decoration-none">
+                                        <button type="button" class="btn btn-danger text-white px-4">Accedi</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </header>
         <!-- /header -->
 
         <!-- main -->
         <main>
-                MAIN
+            <div class="container-fluid bg-green">
+                <div class="container">
+                    <div class="row justify-content-center py-5">
+                        <div class="col-auto text-white text-center fw-bold fs-3">
+                            Calcolo del prezzo del biglietto del treno
+                        </div>
+                    </div>
+                    <div class="card bg-body-secondary">
+                        <div class="container-md text-dark">
+                            <form class="form py-3">
+                                <div class="row justify-content-between">
+                                    <div class="mb-3 w-50">
+                                        <label for="KmInput" class="form-label py-2">Quanti km vuoi percorrere?</label>
+                                        <input type="number" class="form-control" id="KmInput" placeholder="Inserisci il numero di km che vuoi percorrere">
+                                    </div>
+                                    <div class="mb-3 w-50">
+                                        <label for="AgeInput" class="form-label py-2">Qual è la tua data di nascita?</label>
+                                        <input type="date" class="form-control" id="AgeInput">
+                                    </div>                                    
+                                </div>
+                                <div class="row justify-content-center">                   
+                                    <button type="button" class="col-auto btn btn-danger text-white px-4" id="KmFinalPrice" onclick="">Calcola</button>
+                                </div>
+                            </form>
+                            <div class="text-center py-3 fw-bold text-dark">
+                                Il costo del tuo biglietto è di € 
+                                <span id="final-price"></span>
+                            </div>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <!-- /main -->
 
         <!-- footer -->
         <footer>      
-                FOOTER     
+                   
         </footer>
         <!-- /footer -->
 
         <!-- BOOTSTRAP JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- JS -->
         <script type="text/javascript" src="js/scripts.js"></script>
     </body>
 </html>
