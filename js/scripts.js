@@ -76,5 +76,7 @@ function calculate() {
 
     // Stampa del prezzo finale nell'HTML
 
-    document.getElementById('final-price').innerHTML = FinalPrice;
+    let FormatPrice = FinalPrice.toFixed(2)
+
+    document.getElementById('final-price').innerHTML = FormatPrice;
 }
